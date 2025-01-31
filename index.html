@@ -33,7 +33,7 @@
             <button class=" text-black bg-white font-medium py-2 px-3 rounded-md">Play now</button>
         </section>
         <!-- play-ground -->
-        <section class="play-ground flex flex-col items-center gap-7 pt-7">
+        <section class="play-ground hidden flex flex-col items-center gap-5 pt-7">
             <!-- screen -->
             <div
                 class="artboard artboard-horizontal phone-6 border-[16px] rounded-2xl border-[#010313CC] bg-[#ffffffBC]">
@@ -80,9 +80,7 @@
                     <kbd class="kbd">/</kbd>
                 </div>
             </div>
-            <!-- keyboard end -->
-        </section>
-        <section class="score">
+            <!-- button-container -->
             <div class="flex justify-between w-4/5 mx-auto pb-5">
                 <button class="btn">
                     Button
@@ -101,6 +99,15 @@
                             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                 </button>
+            </div>
+            <!-- keyboard end -->
+        </section>
+        <section class="score flex items-center justify-center min-h-screen">
+            <div class="flex flex-col gap-5 items-center justify-center text-white bg-white bg-opacity-30 p-5 rounded-md">
+                <h1 class="font-bold text-6xl">Score: <span>14</span></h1>
+                <button class="btn bg-white text-black rounded-md">Play again</button>
+                <p>Practice will make you Pro</p>
+
             </div>
         </section>
     </main>
