@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme ='light' lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,71 @@
     <!-- tailwind and daisy link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="style/index.css" href="style.css">
+    <!-- google font-poppins -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
 
+        .font-poppins {
+            font-family: "Poppins", serif;
+
+        }
+
+        .font-anton {
+            font-family: "Anton", serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-poppins">
     <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center bg-contain">
-        <section class="home-section flex flex-col items-center justify-center">
-            <h1 class="text-7xl font-bold uppercase text-white">alphabet class</h1>
-            <p class=" font-semibold text-white py-5">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="bg-white text-black font-medium py-2 px-3 rounded-md">Play now</button>
+        <!-- Home screen -->
+        <section class="home-section min-h-screen hidden  flex-col items-center justify-center text-white">
+            <h1 class="text-7xl font-bold font-anton uppercase ">alphabet class</h1>
+            <p class="text-xs font-semibold py-5">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button class=" text-black bg-white font-medium py-2 px-3 rounded-md">Play now</button>
         </section>
+        <!-- play-ground -->
         <section class="play-ground">
+            <!-- screen -->
+            <div class="artboard artboard-horizontal phone-6">1024×320</div>
+            <!-- keyboard start -->
+            <div class="keyboard-container">
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                </div>
+            </div>
+            <!-- keyboard end -->
 
         </section>
         <section class="score">
