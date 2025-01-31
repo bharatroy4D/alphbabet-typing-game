@@ -25,7 +25,7 @@
 </head>
 
 <body class="font-poppins">
-    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center bg-contain">
+    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center ">
         <!-- Home screen -->
         <section class="home-section min-h-screen hidden  flex-col items-center justify-center text-white">
             <h1 class="text-7xl font-bold font-anton uppercase ">alphabet class</h1>
@@ -33,9 +33,14 @@
             <button class=" text-black bg-white font-medium py-2 px-3 rounded-md">Play now</button>
         </section>
         <!-- play-ground -->
-        <section class="play-ground">
+        <section class="play-ground flex flex-col items-center gap-7 pt-7">
             <!-- screen -->
-            <div class="artboard artboard-horizontal phone-6 border-[16px] rounded-2xl border-[#010313CC] bg-[#ffffffBC]">1024×320</div>
+            <div class="artboard artboard-horizontal phone-6 border-[16px] rounded-2xl border-[#010313CC] bg-[#ffffffBC]">
+                <div class="flex justify-center ">
+                    <p class=" bg-slate-900 text-white px-6 pb-2 rounded-b-lg">Don't watch keyboard  while playing...</p>
+
+                </div>
+            </div>
             <!-- keyboard start -->
             <div class="keyboard-container">
                 <div class="my-1 flex w-full justify-center gap-1">
