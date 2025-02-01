@@ -1,3 +1,9 @@
+// handle keyboard button pressed
+function handleKeyboardButtonPress(){
+    console.log('button pressed')
+}
+document.addEventListener('keyup', handleKeyboardButtonPress);
+
 function continueGame() {
     const alphabets = getRandomAlphabet();
     const displayLatter = document.getElementById('display-latter');
