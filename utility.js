@@ -8,6 +8,11 @@ function showElementById(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
 }
+// set background-color
+function setBackgroundColor(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-500')
+}
 
 function getRandomAlphabet(){
     // random alphabet
