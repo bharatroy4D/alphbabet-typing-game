@@ -6,7 +6,15 @@ function handleKeyboardButtonPress(Event){
     const currentAlphabetElement = document.getElementById('display-latter');
     const currentAlphabet = currentAlphabetElement.innerText;
     const alphabet = currentAlphabet.toLowerCase(currentAlphabet);
-    console.log(playerPress, alphabet)
+    
+    continueGame();
+    
+    if(playerPress === alphabet){
+        removeBackgroundColor(alphabet)
+    }
+    else{
+        console.log('you are rang')
+    }
 }
 document.addEventListener('keyup', handleKeyboardButtonPress);
 
