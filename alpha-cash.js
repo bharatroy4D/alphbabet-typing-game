@@ -3,7 +3,10 @@ function handleKeyboardButtonPress(Event){
     const playerPress = Event.key;
 
     // expected alphabet
-    const currentAlphabetElement = document
+    const currentAlphabetElement = document.getElementById('display-latter');
+    const currentAlphabet = currentAlphabetElement.innerText;
+    const alphabet = currentAlphabet.toLowerCase(currentAlphabet);
+    console.log(playerPress, alphabet)
 }
 document.addEventListener('keyup', handleKeyboardButtonPress);
 
