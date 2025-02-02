@@ -11,6 +11,13 @@ function handleKeyboardButtonPress(Event){
     
     if(playerPress === alphabet){
         removeBackgroundColor(alphabet)
+        const currentScoreElementId = document.getElementById('current-score');
+        const currentScoreText = currentScoreElementId.innerText;
+        const currentScore = parseInt(currentScoreText);
+        const updatedScore = currentScore + 1;
+        console.log(updatedScore);
+        currentScoreElementId.innerText = updatedScore;
+
     }
     else{
         console.log('you are rang')
