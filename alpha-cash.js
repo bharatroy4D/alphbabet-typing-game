@@ -1,6 +1,9 @@
 // handle keyboard button pressed
-function handleKeyboardButtonPress(){
-    console.log('button pressed')
+function handleKeyboardButtonPress(Event){
+    const playerPress = Event.key;
+
+    // expected alphabet
+    const currentAlphabetElement = document
 }
 document.addEventListener('keyup', handleKeyboardButtonPress);
 
