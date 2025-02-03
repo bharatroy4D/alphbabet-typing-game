@@ -1,26 +1,31 @@
 // handle keyboard button pressed
-function handleKeyboardButtonPress(Event){
+function handleKeyboardButtonPress(Event) {
     const playerPress = Event.key;
 
     // expected alphabet
     const currentAlphabetElement = document.getElementById('display-latter');
     const currentAlphabet = currentAlphabetElement.innerText;
     const alphabet = currentAlphabet.toLowerCase(currentAlphabet);
-    
-    continueGame();
-    
-    if(playerPress === alphabet){
-        removeBackgroundColor(alphabet)
-        const currentScoreElementId = document.getElementById('current-score');
-        const currentScoreText = currentScoreElementId.innerText;
-        const currentScore = parseInt(currentScoreText);
-        const updatedScore = currentScore + 1;
-        console.log(updatedScore);
-        currentScoreElementId.innerText = updatedScore;
 
+    continueGame();
+
+    if (playerPress === alphabet) {
+        removeBackgroundColor(alphabet)
+        // score updated
+        const currentScore = getTextElementById('current-score');
+        const updatedScore = currentScore + 1;
+        setTextElementById('current-score', updatedScore);
     }
-    else{
-        console.log('you are rang')
+    else {
+     
+        const currentLife = getTextElementById('current-life');
+        console.log(currentLife)
+        const updatedLife = currentLife - 1;
+        setTextElementById('current-life', updatedLife);
+        
+        if(updatedLife === 0){
+            gameOver();
+        }
     }
 }
 document.addEventListener('keyup', handleKeyboardButtonPress);

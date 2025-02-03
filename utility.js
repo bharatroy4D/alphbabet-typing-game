@@ -18,6 +18,17 @@ function removeBackgroundColor(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('bg-orange-500')
 }
+function getTextElementById(elementId){
+    const element = document.getElementById(elementId);
+    const elementTextValue = element.innerText;
+    const value = parseInt(elementTextValue);
+    return value;
+
+}
+function setTextElementById(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
 
 function getRandomAlphabet(){
     // random alphabet
@@ -29,5 +40,13 @@ function getRandomAlphabet(){
     const index = Math.round(randomNumbers);
     const alphabet = alphabets[index];
     return alphabet;
+
+}
+function gameOver(){
+    hideElementById('play-ground');
+    showElementById('final-score')
+
+   const displayScore = getTextElementById('display-score')
+   displayScore.innerText = '50';
 
 }
