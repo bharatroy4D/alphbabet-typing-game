@@ -40,6 +40,7 @@ function continueGame() {
 // play function
 function play() {
     hideElementById('home-screen');
+    hideElementById('final-score');
     showElementById('play-ground')
     continueGame();
 }
